@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#17141c">
   <title>Criar conta | NEXO</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <!-- Carregar a biblioteca do cliente Supabase via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -78,7 +79,11 @@
         .select();
 
       if (error) {
-        alert('Erro ao gravar registro: ' + error.message);
+        if (error.code === '23505' || error.message.includes('usuarios_email_key')) {
+          alert('O usuário ou senha já está cadastrado');
+        } else {
+          alert('Erro ao gravar registro: ' + error.message);
+        }
       } else {
         if (data && data.length > 0) {
           localStorage.setItem('nexo_user', JSON.stringify(data[0]));
