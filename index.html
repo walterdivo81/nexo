@@ -1,3 +1,52 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17141c"><title>NEXO — Relacionamentos próximos</title><link rel="stylesheet" href="assets/style.css"></head><body><header class="top"><a class="brand" href="index.html">NE<span>X</span>O</a><nav><a href="index.html">Início</a><a href="descobrir.html">Descobrir</a><a href="matches.html">Matches</a><a href="mensagens.html">Mensagens</a><a href="perfil.html">Meu perfil</a><a href="configuracoes.html">Configurações</a><a href="admin.html">Admin</a></nav></header>
-<main class="wrap"><section class="hero"><div><div class="eyebrow">Conexões que começam perto</div><h1>Conheça pessoas.<br><span style="color:var(--rose)">Crie conexões reais.</span></h1><p>Uma experiência de relacionamento pensada para aproximar pessoas com interesses compatíveis, respeitando privacidade e escolhas.</p><a class="btn" href="pages/cadastro.html">Criar minha conta</a> <a class="btn secondary" href="pages/descobrir.html">Explorar demonstração</a><p class="muted" style="font-size:12px;margin-top:20px">Exclusivo para maiores de 18 anos.</p></div><div class="hero-art"><div class="orb"></div><div style="position:absolute;bottom:24px;left:24px" class="card"> <b>Conexões próximas</b><div class="muted">Descubra pessoas no seu ritmo.</div></div></div></section>
-<div class="section-head"><h2>Uma plataforma, três experiências</h2></div><div class="grid"><div class="card"><h3>Descoberta inteligente</h3><p class="muted">Filtros de idade, preferências e distância aproximada.</p></div><div class="card"><h3>Perfis completos</h3><p class="muted">Fotos, interesses e uma apresentação autêntica.</p></div><div class="card"><h3>Conversas privadas</h3><p class="muted">Matches e mensagens com ferramentas de segurança.</p></div></div></main><footer class="footer">NEXO • Protótipo de interface — versão demonstrativa. Serviço destinado exclusivamente a maiores de 18 anos. As funções apresentadas ainda não estão conectadas a um backend.</footer><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17141c">
+  <title>NEXO — Relacionamentos próximos</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html">NE<span>X</span>O</a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="páginas/login.html">Entrar</a>
+      <a href="páginas/descobrir.html">Descobrir</a>
+      <a href="páginas/matches.html">Matches</a>
+      <a href="páginas/mensagens.html">Mensagens</a>
+      <a href="páginas/perfil.html">Meu perfil</a>
+      <a href="páginas/configuracoes.html">Configurações</a>
+      <a href="páginas/admin.html">Admin</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Conexões que começam perto</div>
+        <h1>Conheça pessoas.<br><span style="color:var(--rose)">Crie conexões reais.</span></h1>
+        <p>Uma experiência de relacionamento pensada para aproximar pessoas com interesses compatíveis, respeitando privacidade e escolhas.</p>
+        <a class="btn" href="páginas/cadastro.html">Criar minha conta</a> 
+        <a class="btn secondary" href="páginas/login.html">Fazer Login</a>
+        <p class="muted" style="font-size:12px;margin-top:20px">Exclusivo para maiores de 18 anos.</p>
+      </div>
+      <div class="hero-art">
+        <div class="orb"></div>
+        <div style="position:absolute;bottom:24px;left:24px" class="card"> 
+          <b>Conexões próximas</b>
+          <div class="muted">Descubra pessoas no seu ritmo.</div>
+        </div>
+      </div>
+    </section>
+    <div class="section-head"><h2>Uma plataforma, três experiências</h2></div>
+    <div class="grid">
+      <div class="card"><h3>Descoberta inteligente</h3><p class="muted">Filtros de idade, preferências e distância aproximada.</p></div>
+      <div class="card"><h3>Perfis completos</h3><p class="muted">Fotos, interesses e uma apresentação autêntica.</p></div>
+      <div class="card"><h3>Conversas privadas</h3><p class="muted">Matches e mensagens com ferramentas de segurança.</p></div>
+    </div>
+  </main>
+  <footer class="footer">NEXO • Serviço destinado exclusivamente a maiores de 18 anos.</footer>
+</body>
+</html>
